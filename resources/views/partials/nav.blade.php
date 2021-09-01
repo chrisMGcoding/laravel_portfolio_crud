@@ -10,28 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('about')}}">About</a>
+          <a class="nav-link active" aria-current="page" href="{{route('about')}}">Titres & Descriptions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="{{route('contact')}}">Coordoonnées personnelles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('facts')}}">Facts</a>
+          <a class="nav-link" href="{{route('facts')}}">Faits marquants</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('resume')}}">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Testimonial</a>
+          <a class="nav-link" href="{{route('resume')}}">Année</a>
         </li>
       </ul>
 
