@@ -14,13 +14,9 @@ class HomeController extends Controller
     public function index() {
 
         $statistique = Statistique::all();
-
         $coordonnee = Coordonnee::all();
-
         $titre = Titre::all();
-
         $competence = Competence::all();
-
         $annee = Resume::all();
         
         return view('template.template', compact('statistique', 'coordonnee', 'titre', 'competence', 'annee'));
