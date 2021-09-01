@@ -9,7 +9,7 @@ use App\Models\Titre;
 use App\Models\Statistique;
 use Illuminate\Http\Request;
 
-class FactsController extends Controller
+class FactController extends Controller
 {
     public function index() {
 
@@ -25,7 +25,7 @@ class FactsController extends Controller
     public function store(Request $request) {
         request()->validate([
             "titre"=>["required"],
-            "description"=>["required"]
+            "nombre"=>["required"]
         ]);
 
         $statistique = new Statistique;

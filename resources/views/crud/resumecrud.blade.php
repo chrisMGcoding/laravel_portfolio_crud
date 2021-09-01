@@ -10,7 +10,6 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Titre</th>
-                <th scope="col">Nombre</th>
                 <th scope="col">Action</th>
                 <th scope="col">Show</th>
             </tr>
@@ -18,20 +17,19 @@
 
         <tbody>
 
-        @foreach($statistique as $item)
+        @foreach($annee as $item)
 
             <tr>
                 <th scope="row">{{($item->id)}}</th>
-                <td>{{($item->titre)}}</td>
-                <td>{{($item->nombre)}}</td>
+                <td>{{($item->annee)}}</td>
                 <td>
-                    <form action="/facts/{{$item->id}}" method="post">
+                    <form action="/resume/{{$item->id}}" method="post">
                         @csrf
                         <button type="submit">Delete</button>
                     </form>
                 </td>
                 <td>
-                    <button><a href="/crud/factsshow/{{$item->id}}">Show</a></button>
+                    <button><a href="/crud/resumeshow/{{$item->id}}">Show</a></button>
                 </td>
             </tr>
 
@@ -41,7 +39,7 @@
 
     </table>
 
-    <h3 class="mt-2 mb-2">Ajout d'un nouveau titre/Nombre :</h3>
+    <h3 class="mt-2 mb-2">Ajout d'une nouvelle année :</h3>
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -53,14 +51,11 @@
         </div>
     @endif
 
-    <form action="/facts/store" method="post">
+    <form action="/resume/store" method="post">
     @csrf
 
-        <label class="mt-2 mb-2" for="">Titre :</label>
-        <input type="text" name="titre" id="" value="{{old('titre')}}">
-                <br>
-        <label class="mt-2 mb-2" for="">Nombre :</label>
-        <input type="text" name="nombre" id="" value="{{old('nombre')}}">
+        <label class="mt-2 mb-2" for="">Nouvelle année :</label>
+        <input type="text" name="annee" id="" value="{{old('annee')}}">
                 <br>
         <button class="mt-2 mb-2" type="submit">Ajouter</button>
     

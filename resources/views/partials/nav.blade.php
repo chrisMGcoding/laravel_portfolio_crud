@@ -16,13 +16,13 @@
           <a class="nav-link" href="#">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Facts</a>
+          <a class="nav-link" href="{{route('facts')}}">Facts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="{{route('resume')}}">Resume</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Services</a>
