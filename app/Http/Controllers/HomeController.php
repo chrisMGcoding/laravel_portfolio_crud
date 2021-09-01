@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Photo;
 use App\Models\Resume;
 use App\Models\Competence;
 use App\Models\Coordonnee;
@@ -18,7 +19,8 @@ class HomeController extends Controller
         $titre = Titre::all();
         $competence = Competence::all();
         $annee = Resume::all();
+        $photo = Photo::all();
         
-        return view('template.template', compact('statistique', 'coordonnee', 'titre', 'competence', 'annee'));
+        return view('template.template', compact('statistique', 'coordonnee', 'titre', 'competence', 'annee', 'photo'));
     }
 }

@@ -21,6 +21,13 @@
         <li class="nav-item">
           <a class="nav-link" href="{{route('resume')}}">Année</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('competence')}}">Compétence</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('photo')}}">Photo</a>
+        </li>
+      </ul>
       </ul>
 
     </div>

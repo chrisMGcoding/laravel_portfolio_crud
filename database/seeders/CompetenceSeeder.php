@@ -17,27 +17,27 @@ class CompetenceSeeder extends Seeder
         DB::table('competences')->insert([
             [
                 "competence"=>"HTML",
-                "pourcentage"=>"100%"
+                "pourcentage"=>"100"
             ],
             [
                 "competence"=>"CSS",
-                "pourcentage"=>"80%"
+                "pourcentage"=>"80"
             ],
             [
                 "competence"=>"Javascript",
-                "pourcentage"=>"75%"
+                "pourcentage"=>"75"
             ],
             [
                 "competence"=>"PHP",
-                "pourcentage"=>"50%"
+                "pourcentage"=>"50"
             ],
             [
                 "competence"=>"WordPressCMS",
-                "pourcentage"=>"90%"
+                "pourcentage"=>"90"
             ],
             [
                 "competence"=>"PhotoShop",
-                "pourcentage"=>"80%"
+                "pourcentage"=>"80"
             ]
         ]);
     }

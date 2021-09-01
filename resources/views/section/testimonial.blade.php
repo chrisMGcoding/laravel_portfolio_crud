@@ -9,16 +9,17 @@
 
       <div class="owl-carousel testimonials-carousel">
 
-        <div class="testimonial-item" data-aos="fade-up">
-          <p>
-            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            {{($titre[30]->description)}}
-            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-          </p>
-          <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-          <h3>Saul Goodman</h3>
-          <h4>Ceo &amp; Founder</h4>
-        </div>
+
+          <div class="testimonial-item" data-aos="fade-up">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              {{($titre[30]->description)}}
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+          </div>
 
         <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
           <p>

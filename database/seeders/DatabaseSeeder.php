@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CoordonneeSeeder::class,
             StatistiquesSeeder::class,
-            CompetenceSeeder::class
+            CompetenceSeeder::class,
+            PhotoSeeder::class
         ]);
     }
 }
